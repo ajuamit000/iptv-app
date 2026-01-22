@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP TV - Stream Live TV Channels Worldwide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-tv"></i>
+                <span>IP TV</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="channels.html">Channels</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-channels">
+                <div class="channel-card floating" style="--delay: 0s; --x: 10%; --y: 20%;">
+                    <i class="fas fa-film"></i>
+                    <span>Movies</span>
+                </div>
+                <div class="channel-card floating" style="--delay: 0.5s; --x: 80%; --y: 15%;">
+                    <i class="fas fa-futbol"></i>
+                    <span>Sports</span>
+                </div>
+                <div class="channel-card floating" style="--delay: 1s; --x: 15%; --y: 70%;">
+                    <i class="fas fa-newspaper"></i>
+                    <span>News</span>
+                </div>
+                <div class="channel-card floating" style="--delay: 1.5s; --x: 85%; --y: 65%;">
+                    <i class="fas fa-music"></i>
+                    <span>Music</span>
+                </div>
+                <div class="channel-card floating" style="--delay: 2s; --x: 50%; --y: 80%;">
+                    <i class="fas fa-child"></i>
+                    <span>Kids</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in">
+                <i class="fas fa-star"></i>
+                <span>Free & Open Source</span>
+            </div>
+            <h1 class="animate-slide-up">
+                Stream <span class="gradient-text">Live TV</span> Channels<br>
+                From Around the World
+            </h1>
+            <p class="hero-subtitle animate-slide-up delay-1">
+                Experience thousands of free IPTV channels with our modern, 
+                feature-rich Android application. No subscription required!
+            </p>
+            <div class="hero-buttons animate-slide-up delay-2">
+                <a href="#download" class="btn btn-primary">
+                    <i class="fab fa-android"></i>
+                    Download Now
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    Learn More
+                </a>
+            </div>
+            <div class="hero-stats animate-fade-in delay-3">
+                <div class="stat">
+                    <span class="stat-number" data-count="10000">0</span>
+                    <span class="stat-label">Channels</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="200">0</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="30">0</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-phone animate-slide-right">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="app-preview">
+                        <div class="app-header">
+                            <span>IP TV</span>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="app-channels">
+                            <div class="mini-channel">
+                                <div class="channel-logo"><i class="fas fa-tv"></i></div>
+                                <span>CNN</span>
+                            </div>
+                            <div class="mini-channel">
+                                <div class="channel-logo"><i class="fas fa-tv"></i></div>
+                                <span>BBC</span>
+                            </div>
+                            <div class="mini-channel active">
+                                <div class="channel-logo"><i class="fas fa-tv"></i></div>
+                                <span>ESPN</span>
+                            </div>
+                            <div class="mini-channel">
+                                <div class="channel-logo"><i class="fas fa-tv"></i></div>
+                                <span>Discovery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Choose Us</span>
+                <h2>Packed with <span class="gradient-text">Amazing Features</span></h2>
+                <p>Everything you need for the ultimate streaming experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>10,000+ Channels</h3>
+                    <p>Access thousands of live TV channels from over 200 countries worldwide, all completely free.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <h3>Custom Playlists</h3>
+                    <p>Create and manage your own playlists. Add M3U URLs or organize your favorite channels.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>EPG Support</h3>
+                    <p>Electronic Program Guide shows you what's on now and coming up next on your channels.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Favorites</h3>
+                    <p>Mark channels as favorites for quick access. Never miss your preferred content.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Smart Search</h3>
+                    <p>Quickly find channels by name, category, country, or language with our intelligent search.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Quality Settings</h3>
+                    <p>Choose video quality based on your internet speed. Supports HD and SD streaming.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Dark Mode</h3>
+                    <p>Easy on the eyes with beautiful dark and light themes. Perfect for night viewing.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Modern UI</h3>
+                    <p>Clean, intuitive Material Design 3 interface. Smooth animations and gestures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channel Categories Preview -->
+    <section class="categories-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Browse Content</span>
+                <h2>Explore <span class="gradient-text">Channel Categories</span></h2>
+                <p>From sports to news, movies to music - we have it all</p>
+            </div>
+            <div class="categories-showcase">
+                <div class="category-slide">
+                    <div class="category-item">
+                        <i class="fas fa-newspaper"></i>
+                        <span>News</span>
+                        <small>897+ Channels</small>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-futbol"></i>
+                        <span>Sports</span>
+                        <small>308+ Channels</small>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-film"></i>
+                        <span>Movies</span>
+                        <small>382+ Channels</small>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-music"></i>
+                        <span>Music</span>
+                        <small>623+ Channels</small>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-child"></i>
+                        <span>Kids</span>
+                        <small>247+ Channels</small>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                        <small>184+ Channels</small>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-book"></i>
+                        <span>Documentary</span>
+                        <small>114+ Channels</small>
+                    </div>
+                    <div class="category-item">
+                        <i class="fas fa-masks-theater"></i>
+                        <span>Entertainment</span>
+                        <small>608+ Channels</small>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="channels.html" class="btn btn-primary">
+                    <i class="fas fa-list"></i>
+                    View All Channels
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-info">
+                    <span class="section-badge">Get Started</span>
+                    <h2>Download <span class="gradient-text">IP TV App</span></h2>
+                    <p>Follow these simple steps to get started with IP TV on your Android device.</p>
+                    
+                    <div class="install-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Download APK</h4>
+                                <p>Click the download button to get the latest APK file.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Enable Unknown Sources</h4>
+                                <p>Go to Settings → Security → Enable "Unknown Sources" or allow installation from your browser.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Install & Enjoy</h4>
+                                <p>Open the downloaded APK, tap Install, and start watching!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="download-buttons">
+                        <a href="#" class="btn btn-download">
+                            <i class="fab fa-android"></i>
+                            <div>
+                                <small>Download for</small>
+                                <span>Android</span>
+                            </div>
+                        </a>
+                        <div class="app-info">
+                            <div class="info-item">
+                                <i class="fas fa-file-archive"></i>
+                                <span>Size: ~15 MB</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-code-branch"></i>
+                                <span>Version: 1.0.0</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-android"></i>
+                                <span>Android 7.0+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <div class="download-phone">
+                        <div class="phone-mockup large">
+                            <div class="phone-screen">
+                                <div class="install-animation">
+                                    <div class="progress-ring">
+                                        <svg>
+                                            <circle cx="60" cy="60" r="54"></circle>
+                                            <circle cx="60" cy="60" r="54" class="progress"></circle>
+                                        </svg>
+                                        <div class="progress-icon">
+                                            <i class="fab fa-android"></i>
+                                        </div>
+                                    </div>
+                                    <span>Installing IP TV...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Simple Steps</span>
+                <h2>How to <span class="gradient-text">Use IP TV</span></h2>
+                <p>Get started in minutes with our easy-to-use application</p>
+            </div>
+            <div class="steps-timeline">
+                <div class="timeline-step">
+                    <div class="timeline-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Download & Install</h3>
+                        <p>Get the app from our website and install it on your Android device.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Launch the App</h3>
+                        <p>Open IP TV and wait for the initial channel list to load.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Browse Channels</h3>
+                        <p>Explore channels by category, country, or use the search function.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Start Watching</h3>
+                        <p>Tap any channel to start streaming. Add to favorites for quick access!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions or feedback? We'd love to hear from you!</p>
+                    <div class="developer-info">
+                        <div class="developer-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="developer-details">
+                            <h4>Techno Science (Mr. Dev)</h4>
+                            <span>Lead Developer</span>
+                        </div>
+                    </div>
+                    <a href="mailto:technoscsoln@gmail.com" class="contact-email">
+                        <i class="fas fa-envelope"></i>
+                        technoscsoln@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-tv"></i>
+                        <span>IP TV</span>
+                    </a>
+                    <p>Stream thousands of live TV channels from around the world, completely free.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="channels.html">Channels</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:technoscsoln@gmail.com"><i class="fas fa-envelope"></i> Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IP TV by Techno Science (Mr. Dev). All rights reserved.</p>
+                <p>This app uses publicly available IPTV streams. We do not host any content.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

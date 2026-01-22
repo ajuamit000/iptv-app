@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel List - IP TV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-tv"></i>
+                <span>IP TV</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#download">Download</a></li>
+                <li><a href="channels.html" class="active">Channels</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Channels Header -->
+    <section class="channels-header">
+        <div class="container">
+            <div class="channels-hero">
+                <i class="fas fa-satellite-dish"></i>
+                <h1>Channel Directory</h1>
+                <p>Explore 10,000+ channels from around the world</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="channels-search">
+        <div class="container">
+            <div class="search-box">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="channelSearch" placeholder="Search channels by name, category, or country...">
+                    <button class="clear-search" id="clearSearch">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">
+                    <i class="fas fa-globe"></i>
+                    All
+                </button>
+                <button class="filter-tab" data-filter="news">
+                    <i class="fas fa-newspaper"></i>
+                    News
+                </button>
+                <button class="filter-tab" data-filter="sports">
+                    <i class="fas fa-futbol"></i>
+                    Sports
+                </button>
+                <button class="filter-tab" data-filter="movies">
+                    <i class="fas fa-film"></i>
+                    Movies
+                </button>
+                <button class="filter-tab" data-filter="music">
+                    <i class="fas fa-music"></i>
+                    Music
+                </button>
+                <button class="filter-tab" data-filter="kids">
+                    <i class="fas fa-child"></i>
+                    Kids
+                </button>
+                <button class="filter-tab" data-filter="entertainment">
+                    <i class="fas fa-masks-theater"></i>
+                    Entertainment
+                </button>
+                <button class="filter-tab" data-filter="documentary">
+                    <i class="fas fa-book"></i>
+                    Documentary
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channel Stats -->
+    <section class="channel-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-tv"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-value">10,000+</span>
+                        <span class="stat-label">Total Channels</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-globe-americas"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-value">200+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-language"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-value">150+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-tags"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-value">30</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-th-large"></i> Browse by Category</h2>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Channel List Section -->
+    <section class="channels-list">
+        <div class="container">
+            <div class="list-header">
+                <h2 class="section-title"><i class="fas fa-list"></i> Channel List</h2>
+                <div class="results-count">
+                    Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> channels
+                </div>
+            </div>
+            <div class="channels-grid" id="channelsGrid">
+                <!-- Channels will be populated by JavaScript -->
+            </div>
+            <div class="load-more-wrapper">
+                <button class="btn btn-secondary" id="loadMore">
+                    <i class="fas fa-plus"></i>
+                    Load More Channels
+                </button>
+            </div>
+            <div class="no-results" id="noResults">
+                <i class="fas fa-search"></i>
+                <h3>No channels found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-language"></i> Popular Languages</h2>
+            <div class="languages-grid" id="languagesGrid">
+                <!-- Languages will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Section -->
+    <section class="countries-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-flag"></i> Browse by Country</h2>
+            <div class="countries-grid" id="countriesGrid">
+                <!-- Countries will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="channels-cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Ready to Watch?</h2>
+                    <p>Download IP TV now and start streaming all these channels for free!</p>
+                    <a href="index.html#download" class="btn btn-primary">
+                        <i class="fab fa-android"></i>
+                        Download Now
+                    </a>
+                </div>
+                <div class="cta-visual">
+                    <div class="channel-carousel">
+                        <div class="carousel-track">
+                            <div class="carousel-item"><i class="fas fa-tv"></i></div>
+                            <div class="carousel-item"><i class="fas fa-film"></i></div>
+                            <div class="carousel-item"><i class="fas fa-futbol"></i></div>
+                            <div class="carousel-item"><i class="fas fa-music"></i></div>
+                            <div class="carousel-item"><i class="fas fa-newspaper"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-tv"></i>
+                        <span>IP TV</span>
+                    </a>
+                    <p>Stream thousands of live TV channels from around the world, completely free.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#download">Download</a></li>
+                        <li><a href="channels.html">Channels</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:technoscsoln@gmail.com"><i class="fas fa-envelope"></i> Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IP TV by Techno Science (Mr. Dev). All rights reserved.</p>
+                <p>This app uses publicly available IPTV streams. We do not host any content.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/channels.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
